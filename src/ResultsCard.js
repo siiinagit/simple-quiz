@@ -17,7 +17,7 @@ const ResultsCard = ({}) => {
 
   const restartgame = () => {
     
-    nav('/')
+    nav('/simple-quiz')
     window.location.reload()
     setupResult(0)
   }
