@@ -18,7 +18,6 @@ const QuestionCard = ({}) => {
     data,
     counter,
     setupCounter,
-    setupShowResult,
     checkifTrue,
     buttonColor,
     setupButtonColor,
@@ -51,12 +50,12 @@ const QuestionCard = ({}) => {
     <Button
       key="four"
       color={buttonColor ? "success" : "primary"}
-      onClick={()=>checkifTrue('crct')}
+      onClick={() => checkifTrue("crct")}
     >
       {data[counter].correct_answer}
     </Button>,
   ];
-  
+
   return (
     <Container maxWidth="md">
       <Box
@@ -76,7 +75,7 @@ const QuestionCard = ({}) => {
           <CardContent>
             <Typography variant="h6">{data[counter].question}</Typography>
             <ButtonGroup orientation="vertical" sx={{ display: " flex" }}>
-              {buttons.sort(()=> 0.5 - Math.random())}
+              {buttons.sort(() => 0.5 - Math.random())}
             </ButtonGroup>
           </CardContent>
           <CardActions>

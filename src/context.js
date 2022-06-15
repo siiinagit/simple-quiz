@@ -1,5 +1,4 @@
-import { createContext, useState, useEffect } from "react";
-// import { v4 as uuidv4 } from "uuid";
+import { createContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export const KvizContext = createContext();
