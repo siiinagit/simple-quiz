@@ -26,7 +26,7 @@ function App() {
       <KvizContextProvider>
         <Tester />
         <Routes>
-        <Route path="/" element= { <WelcomePage />} />
+        <Route path="/simple-quiz" element= { <WelcomePage />} />
         <Route path="/questions" element= { <QuestionCard />} />
         <Route path="/results" element= { <ResultsCard />} />
       </Routes>
